@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cal Sans', sans-serif;
+}
+ 
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: #003329;
+}
+ 
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.navbar{
+    background: rgb(224, 255, 227) !important;
+}
+
+.navbar-brand{
+    color: black;
+    font-family: "Cal Sans", sans-serif;
+    font-size: 30px;
+}
+
+.nav-link{
+    color: black;
+    font-weight: 600;
+}
+ 
+.logo {
+    font-size: 2cm;
+    color: rgb(0, 202, 135);
+    pointer-events: none;
+    margin-right: 450px;
+}
+ 
+.navigation a {
+    text-decoration: none;
+    color: rgb(0, 202, 135);
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+ 
+.navigation a:hover
+.navigation a.active {
+    background: rgb(0, 202, 135);
+    color: white;
+}
+ 
+.paraliax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+ 
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+ 
+.paraliax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+ 
+.sec{
+    position: relative;
+    background: #003329;
+    padding-top: 100px;
+    padding-bottom: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+ 
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+ 
+.sec p{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+ 
+.carousel-inner{
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+ 
+@keyframes animate {
+    0%{
+        background-position: 0% 50%;
+    }
+    100%{
+        background-position: 100% 50%;
+    }
+}
+ 
+@media (min-width: 768px) and (max-width: 9919px) {
+    .navbar-nav{
+        color: #262626;
+    }
+ 
+    .carousel-item{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+ 
+@media (max-width: 767px) {
+    .navbar-nav{
+        background: rgb(224, 255, 227)
+    }
+ 
+    .nav-link{
+        color: #262626;
+    }
+ 
+    .carousel-item{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+ 
+    .carousel-item h1{
+        font-size: 40px;
+    }
+}
